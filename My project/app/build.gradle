@@ -1,0 +1,105 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+
+
+android {
+    namespace 'com.ajeet.asset'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.ajeet.asset"
+        minSdk 27
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+allprojects {
+    repositories {
+
+
+    }
+}
+dependencies {
+
+    // Voice Recognition
+    implementation 'com.github.zagum:SpeechRecognitionView:1.2.2'
+    implementation 'ai.api:sdk:2.0.7@aar'
+    implementation 'ai.api:libai:1.6.12'
+    implementation 'com.android.volley:volley:1.2.1'
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    implementation 'com.dlazaro66:qrcodereaderview:2.0.1'
+    implementation 'org.tensorflow:tensorflow-android:1.13.1'
+
+    implementation files('src/main/libs/activation.jar')
+    implementation files('src/main/libs/additionnal.jar')
+    implementation files('src/main/libs/mail.jar')
+    implementation files('src/main/libs/qrcodereaderview-2.0.2-javadoc.jar')
+
+    implementation 'net.glxn:qrgen:1.4'
+    implementation 'com.dlazaro66:qrcodereaderview:2.0.3'
+    implementation 'com.dlazaro66:qrcodereaderview:2.0.1'
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.gms:play-services-tasks:18.1.0'
+    implementation 'com.google.firebase:firebase-common:20.4.2'
+    implementation 'com.google.firebase:firebase-storage:20.3.0'
+    implementation 'com.google.android.gms:play-services-auth:20.7.0'
+    implementation 'com.google.firebase:firebase-auth:22.3.1'
+    implementation 'com.google.firebase:firebase-firestore:24.10.1'
+    implementation 'com.google.android.gms:play-services-location:21.1.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'com.mikhaellopez:circularimageview:4.3.1'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'com.jjoe64:graphview:4.2.2'
+    implementation 'com.itextpdf:itextpdf:5.5.13.3'
+    implementation 'net.glxn:qrgen:1.4'
+    implementation 'javax.mail:javax.mail-api:1.6.2'
+    implementation 'javax.activation:activation:1.1.1'
+    implementation 'com.firebaseui:firebase-ui-auth:8.0.2'
+    implementation 'com.google.android.gms:play-services-maps:18.2.0'
+    implementation 'com.dlazaro66:qrcodereaderview:2.0.1'
+    implementation 'org.tensorflow:tensorflow:1.15.0'
+    implementation 'com.dlazaro66.qrcodereaderview:qrcodereaderview:2.0.2'
+    implementation 'net.glxn.qrgen:javase:2.0'
+    implementation 'net.glxn.qrgen:android:2.0'
+    implementation 'com.mikhaellopez:circularimageview:4.3.1'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'com.github.zagum:SpeechRecognitionView:1.2.2'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    implementation group: 'com.dlazaro66.qrcodereaderview', name: 'qrcodereaderview', version: '2.0.2'
+
+    implementation group: 'com.google.zxing', name: 'core', version: '3.5.2'
+    implementation 'com.google.zxing:android-integration:3.3.0'
+    implementation files('libs/qrcodereaderview-2.0.2-javadoc.jar')
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+
+}
+

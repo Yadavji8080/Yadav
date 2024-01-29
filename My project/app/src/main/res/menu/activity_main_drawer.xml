@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:id="@+id/nav_item_one"
+            android:icon="@drawable/signup"
+            android:title="Sign Up" />
+        <item android:id="@+id/nav_item_two"
+            android:icon="@drawable/login"
+            android:title="Login" />
+        <item android:id="@+id/nav_item_three"
+            android:icon="@drawable/contact"
+            android:title="Contact Us" />
+        <item android:id="@+id/nav_item_four"
+            android:icon="@drawable/about"
+            android:title="About Us" />
+        <item android:id="@+id/nav_item_five"
+            android:icon="@drawable/shareflat"
+            android:title="Share" />
+
+    </group>
+</menu>

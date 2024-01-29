@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "546276846864",
+    "project_id": "mydb-3b605",
+    "storage_bucket": "mydb-3b605.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546276846864:android:0308aa1bcf31a7587e8995",
+        "android_client_info": {
+          "package_name": "com.ajeet.asset"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9OFEuUb3IMI03XRgZt0qpV8PcCxJWaMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

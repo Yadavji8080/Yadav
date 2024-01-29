@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout_requested"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/asset_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/asset"
+        android:text="Asset Type:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/asset_number"
+        android:text="Number: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/asset_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="number"
+        android:textAlignment="viewEnd"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/requested"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/asset_type"
+        android:layout_marginTop="10dp"
+        android:text="Requested By: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/requested_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/asset_type"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/requested"
+        android:text="Prince"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:layout_marginRight="-220dp"
+        android:layout_toLeftOf="@id/requested_by"
+        android:text="Acceptable:"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/is_acceptable"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/asset_number"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/color1"
+        android:textAlignment="viewEnd" />
+
+
+</RelativeLayout>

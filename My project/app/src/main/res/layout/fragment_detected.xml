@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.prince.assetManagement.Unused.DetectedFragment"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+    android:id="@+id/objectName"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_marginTop="45dp"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:text="Next" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/logout"/>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout_reported"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+
+    <TextView
+        android:id="@+id/asset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asset: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/asset_type"
+        android:layout_toRightOf="@id/asset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asset Name"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/asset_status"
+        android:text="Status: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/asset_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="working"
+        android:textAlignment="viewEnd"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/reported"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/asset_type"
+        android:layout_marginTop="10dp"
+        android:text="Reported By: "
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/reported_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/asset_type"
+        android:layout_toRightOf="@id/reported"
+        android:text="Prince"
+        android:textSize="17sp" />
+
+
+</RelativeLayout>

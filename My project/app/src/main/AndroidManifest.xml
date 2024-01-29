@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_android"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_custom"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AboutUs" />
+        <activity android:name=".AssetValueGraph" />
+        <activity android:name=".IssuedAssets" />
+        <activity android:name=".IssueAssets" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".MapActivity" />
+        <activity android:name=".Main3Activity" />
+        <activity android:name=".DeleteAssetInfo" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".DeleteAssets" />
+        <activity android:name=".AdminAssetRequest" />
+        <activity android:name=".ApproverAssetRequest"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="asset-managemnt.blogspot.com"
+                    android:pathPrefix="/approver-asset.html"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NormalUserRequests" />
+        <activity android:name=".RequestAsset" />
+        <activity android:name=".ReportedAssets" />
+        <activity android:name=".Display_Graph" />
+        <activity android:name=".NormalUser" />
+        <activity android:name=".Approver" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value= "@string/google_maps_api"/> <!--Enter Google API Here-->
+
+        <activity android:name=".StartActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".DetectorActivity" />
+        <activity android:name=".ScanActivity" />
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".Details" />
+        <activity android:name=".IssuingAssets" />
+        <activity android:name=".GenerateQR" />
+        <activity android:name=".GetPDF" />
+        <activity android:name=".GetInformation" />
+        <activity android:name=".GetAssetInfo" />
+        <activity android:name=".Display_Info" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".AddUsers" />
+        <activity android:name=".ReportActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="ReportActivity" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
